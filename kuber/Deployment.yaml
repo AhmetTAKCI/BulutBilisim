@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: devopsodev
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: devopsodev
+  template:
+    metadata:
+      labels:
+        app: devopsodev
+    spec:
+      containers:
+      - name: devopsodev-kub
+        image: ahmettakci/dersbulut:v1
+        ports:
+        - containerPort: 8080
