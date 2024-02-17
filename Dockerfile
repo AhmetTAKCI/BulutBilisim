@@ -8,7 +8,11 @@ WORKDIR /app
 COPY . /app
 
 # requirements.txt dosyasındaki gerekli paketleri yükle
+COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
+
+# Uygulamanın çalışacağı portu belirtin
+EXPOSE 5000
 
 # Dünya adında bir ortam değişkeni tanımla
 ENV NAME World
