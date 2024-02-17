@@ -1,5 +1,5 @@
 # Kullanılacak temel imajı belirle
-FROM python:3.8-slim
+FROM python:3.11.3-slim-buster
 
 # Çalışma dizinini belirle
 WORKDIR /app
