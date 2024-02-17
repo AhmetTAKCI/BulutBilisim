@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: devopsodev-kub
-        image: ahmettakci/dersbulut:v1
+        image: ahmettakci/devsecops:v5
         ports:
         - containerPort: 8080
