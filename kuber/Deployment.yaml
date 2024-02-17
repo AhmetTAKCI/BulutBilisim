@@ -16,4 +16,4 @@ spec:
       - name: devopsodev-kub
         image: ahmettakci/devsecops:v5
         ports:
-        - containerPort: 8080
+        - containerPort: 5000

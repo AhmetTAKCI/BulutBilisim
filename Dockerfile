@@ -1,5 +1,5 @@
 # Kullanılacak temel imajı belirle
-FROM python:3.11.3-slim-buster
+FROM python:3.8-slim
 
 # Çalışma dizinini belirle
 WORKDIR /app
@@ -10,6 +10,9 @@ COPY . /app
 # requirements.txt dosyasındaki gerekli paketleri yükle
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
+
+# Uygulama dosyalarını kopyalayın
+COPY . .
 
 # Uygulamanın çalışacağı portu belirtin
 EXPOSE 5000
