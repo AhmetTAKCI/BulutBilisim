@@ -1,1 +1,4 @@
-Flask==3.0.1
+flask==3.0.1
+Flask-RESTful
+flask_sqlalchemy
+requests
